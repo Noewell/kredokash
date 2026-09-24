@@ -27,8 +27,8 @@ button,input,select{font:inherit}
 .container{width:min(1180px,calc(100% - 40px));margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(251,252,249,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(223,231,226,.75)}
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{font-weight:900;font-size:25px;letter-spacing:-1.5px;color:var(--forest)}
-.logo span{color:#78ad00}
+.logo{display:flex;align-items:center;line-height:0}
+.logo img{display:block;width:180px;height:auto}
 .navlinks{display:flex;gap:28px;font-size:14px;font-weight:650;color:#40504c}
 .navlinks a:hover{color:var(--forest)}
 .nav-actions{display:flex;align-items:center;gap:10px}
@@ -162,9 +162,8 @@ h1 em{font-style:normal;color:#80b700}
 
 footer{background:#071714;color:#fff;padding:55px 0 30px}
 .footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:35px}
-.footer-logo{font-size:25px;font-weight:900}
-.footer-logo span{color:var(--green)}
-footer p,footer a{color:#9bb1ab;font-size:13px}
+.footer-logo-wrap{display:inline-flex;padding:9px 12px;background:var(--paper);border-radius:12px}
+.footer p,footer a{color:#9bb1ab;font-size:13px}
 footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#fff;margin:0 0 13px}
 .footer-links{display:grid;gap:8px}
 .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:20px;font-size:11px;color:#7d918c;display:flex;justify-content:space-between;gap:15px}
@@ -191,7 +190,7 @@ footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#fff;
 }
 @media(max-width:600px){
   .container{width:min(100% - 26px,1180px)}
-  .nav{height:68px}.nav-actions .btn{display:none}
+  .nav{height:68px}.logo img{width:150px}.nav-actions .btn{display:none}
   h1{letter-spacing:-3px;font-size:54px}
   .hero-visual{min-height:370px;transform:scale(.9);transform-origin:center}
   .business-card{width:250px}.invoice{width:240px;right:0}.float-card{left:35px;width:230px}
@@ -211,7 +210,7 @@ footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#fff;
 
 <header>
   <div class="container nav">
-    <a class="logo" href="#">Kredo<span>Kash</span></a>
+    <a class="logo" href="#" aria-label="KredoKash home"><img src="assets/kredokash-fintech-logo.png" alt="KredoKash — Fast. Secure. Built for You."></a>
     <nav class="navlinks">
       <a href="#financing">Financing</a>
       <a href="#process">How It Works</a>
@@ -462,7 +461,7 @@ footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#fff;
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">Kredo<span>Kash</span></div>
+        <div class="footer-logo-wrap"><a class="logo" href="#" aria-label="KredoKash home"><img src="assets/kredokash-fintech-logo.png" alt="KredoKash — Fast. Secure. Built for You."></a></div>
         <p style="max-width:290px">Structured credit for real business. Financing built around the transaction, the borrower and the repayment capacity.</p>
       </div>
       <div><h4>Financing</h4><div class="footer-links"><a href="#products">Working Capital</a><a href="#products">Invoice Finance</a><a href="#products">Import Finance</a><a href="#products">Asset Finance</a></div></div>

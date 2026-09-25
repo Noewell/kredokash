@@ -1,6 +1,6 @@
 # KredoKash Website Prototype
 
-A responsive, static KredoKash website prototype based on the supplied visual reference and the **KredoKash Website Content Structure**. It presents KredoKash as a structured-credit platform for businesses and individuals, with business credit remaining the primary proposition.
+A responsive, static KredoKash website prototype based on the supplied visual reference and the **KredoKash Website Content Structure**. It presents KredoKash as a structured-financing platform for businesses and individuals, with business credit remaining the primary proposition.
 
 ## Run locally
 
@@ -17,7 +17,6 @@ Open `index.html` in a browser, or serve the directory with a static HTTP server
 | `consumer-finance.html` | Responsible Payday, Student Accommodation, and Student Asset Finance programmes. |
 | `individuals.html` | Individual-facing route to consumer and student finance. |
 | `how-it-works.html` | Ten-stage process from application through monitoring and renewal. |
-| `credit-risk.html` | Credit assessment, transaction risk, portfolio controls, and monitoring. |
 | `resources.html` | Borrower preparation and financing educational resources. |
 | `about.html` | KredoKash approach, credit-platform model, and focus. |
 | `capital-partners.html` | Institutional capital partnership proposition, controls, and reporting. |
@@ -37,4 +36,4 @@ Open `index.html` in a browser, or serve the directory with a static HTTP server
 
 ## Important implementation note
 
-The calculators, modals, and financing-request form are intentionally front-end prototypes. Connect them to a secure production application/API backend before public launch.
+The calculators, modals, and financing-request form are designed for production integration with a secure application/API backend.
